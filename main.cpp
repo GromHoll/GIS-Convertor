@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
             exit(1);
         case 2:
             inFile  = argv[1];
-            outFile = inFile + ".arc";
+            outFile = inFile + ".asc";
             break;
         case 3:
             inFile  = argv[1];
@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
             break;    
     }
 
-    /* 
+    /* getYSize
      * Create file stream for reading info.
      * You can also use other iostream implementation
      * like string, console or socket streams.

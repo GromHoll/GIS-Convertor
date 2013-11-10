@@ -124,8 +124,8 @@ ArcGisTarget::ArcGisTarget(std::ostream * out) : GisTarget(out) {
 }
 
 void ArcGisTarget::writeHeader(GisHeader * header) {
-    (*out) << "ncols " << header->getYSize() << std::endl;
-    (*out) << "nrows " << header->getXSize() << std::endl;
+    (*out) << "ncols " << header->getXSize() << std::endl;
+    (*out) << "nrows " << header->getYSize() << std::endl;
     (*out) << "xllcorner " << header->getMinX() << std::endl;
     (*out) << "yllcorner " << header->getMinY() << std::endl;
     (*out) << "cellsize " << header->getRoundedCellSize() << std::endl;
